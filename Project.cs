@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LivePerformance2016.CSharp;
 
 namespace LivePerformance2016
 {
     public partial class Project : Form
     {
+        
         public Project()
         {
             InitializeComponent();
@@ -19,7 +21,6 @@ namespace LivePerformance2016
 
         private void bttnNieuwProject_Click(object sender, EventArgs e)
         {
-            
         }
     }
 }

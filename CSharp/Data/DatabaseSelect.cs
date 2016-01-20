@@ -9,24 +9,44 @@ namespace LivePerformance2016.CSharp.Data
 {
     public partial class Database
     {
-        //private List<Recht> GetAllRechten()
-        //{
-        //    List<Recht> rechtenList = new List<Recht>();
-        //    using (OracleConnection connection = Connection)
-        //    {
-        //        string query = "SELECT * FROM RECHT";
-        //        using (OracleCommand command = new OracleCommand(query, connection))
-        //        {
-        //            using (OracleDataReader reader = command.ExecuteReader())
-        //            {
-        //                while (reader.Read())
-        //                {
-        //                    rechtenList.Add(CreateRechtFromReader(reader));
-        //                }
-        //            }
-        //        }
-        //    }
-        //    return rechtenList;
-        //}
+        private List<Project> GetAllProjecten()
+        {
+            List<Project> projectlist = new List<Project>();
+            using (OracleConnection connection = Connection)
+            {
+                string query = "SELECT * FROM Project";
+                using (OracleCommand command = new OracleCommand(query, connection))
+                {
+                    using (OracleDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            projectlist.Add(CreateProjectFromReader(reader));
+                        }
+                    }
+                }
+            }
+            return projectlist;
+        }
+
+        private List<TelGebied> GetAllTelgebied()
+        {
+            List<TelGebied> telGebiedlist = new List<TelGebied>();
+            using (OracleConnection connection = Connection)
+            {
+                string query = "SELECT * FROM TELGEBIED";
+                using (OracleCommand command = new OracleCommand(query, connection))
+                {
+                    using (OracleDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            telGebiedlist.Add(CreateTelGebiedFromReader(reader));
+                        }
+                    }
+                }
+            }
+            return telGebiedlist;
+        }
     }
 }
