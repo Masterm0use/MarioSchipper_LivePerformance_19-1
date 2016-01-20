@@ -16,7 +16,7 @@ namespace LivePerformance2016.CSharp
         public string naam { get; set; }
         public string pathMap { get; }
 
-        public TelGebied(int iD, string naam, string beschrijving, string pathMap)
+        public TelGebied(int iD, string naam, string pathMap)
         {
             this._id = iD;
             this._naam = naam;

@@ -9,13 +9,25 @@ namespace LivePerformance2016.CSharp.Data
 {
     public partial class Database
     {
-        //private Recht CreateRechtFromReader(OracleDataReader reader)
-        //{
-        //    return new Recht(
-        //        Convert.ToInt32(reader["ID"]),
-        //        Convert.ToString((reader["Omschrijving"])),
-        //        Convert.ToInt32(reader["Functie_ID"])
-        //        );
-        //}
+        private Project CreateProjectFromReader(OracleDataReader reader)
+        {
+            return new Project(
+                Convert.ToInt32(reader["ID"]),
+                Convert.ToString(reader["Naam"]),
+                Convert.ToString(reader["Beschrijving"]),
+                Convert.ToDateTime(reader["datumStart"]),
+                Convert.ToDateTime(reader["datumEind"])
+                );
+        }
+
+        private TelGebied CreateTelgebiedFromReader(OracleDataReader reader)
+        {
+            return new TelGebied(
+                Convert.ToInt32(reader["ID"]),
+                Convert.ToString(reader["Naam"]),
+                Convert.ToString(reader["PathMap"])
+                );
+        }
+
     }
 }
