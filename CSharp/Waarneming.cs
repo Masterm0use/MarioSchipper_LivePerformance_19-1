@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace LivePerformance2016.CSharp
 {
+    public enum Cat {Va, Ti, Ni};
     [Serializable]
     public class Waarneming
     {
         public int ID { get; }
-        public Type Type { get; }
+        public Cat Cat { get; }
         public int LocX { get; }
         public int LocY { get; }
         public Diersoort Diersoort { get; }
 
-        public Waarneming(int id, Type type, int locX, int locY, Diersoort diersoort)
+        public Waarneming(Cat cat, int locX, int locY, Diersoort diersoort)
         {
-            ID = id;
-            Type = type;
+            //ID = id;
+            Cat = cat;
             LocX = locX;
             LocY = locY;
             Diersoort = diersoort;

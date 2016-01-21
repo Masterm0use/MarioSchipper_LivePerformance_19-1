@@ -5,7 +5,6 @@ C:\Users\Mastermouse\Documents\GitHub\MarioSchipper_LivePerformance_19-1\bin\Deb
 C:\Users\Mastermouse\Documents\GitHub\MarioSchipper_LivePerformance_19-1\bin\Debug\Oracle.ManagedDataAccess.dll
 C:\Users\Mastermouse\Documents\GitHub\MarioSchipper_LivePerformance_19-1\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
 C:\Users\Mastermouse\Documents\GitHub\MarioSchipper_LivePerformance_19-1\obj\Debug\LivePerformance2016.csprojResolveAssemblyReference.cache
-C:\Users\Mastermouse\Documents\GitHub\MarioSchipper_LivePerformance_19-1\obj\Debug\LivePerformance2016.Project.resources
 C:\Users\Mastermouse\Documents\GitHub\MarioSchipper_LivePerformance_19-1\obj\Debug\LivePerformance2016.Properties.Resources.resources
 C:\Users\Mastermouse\Documents\GitHub\MarioSchipper_LivePerformance_19-1\obj\Debug\LivePerformance2016.StartScherm.resources
 C:\Users\Mastermouse\Documents\GitHub\MarioSchipper_LivePerformance_19-1\obj\Debug\LivePerformance2016.csproj.GenerateResource.Cache

@@ -38,7 +38,7 @@
             // 
             // bttnLocal
             // 
-            this.bttnLocal.Location = new System.Drawing.Point(118, 263);
+            this.bttnLocal.Location = new System.Drawing.Point(118, 277);
             this.bttnLocal.Name = "bttnLocal";
             this.bttnLocal.Size = new System.Drawing.Size(108, 45);
             this.bttnLocal.TabIndex = 1;

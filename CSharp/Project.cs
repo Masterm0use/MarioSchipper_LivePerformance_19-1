@@ -11,7 +11,7 @@ namespace LivePerformance2016.CSharp
         public int ID { get; }
         public DateTime DatumStart { get; }
         public DateTime DatumEind { get; set; }
-        public string Beschrijving { get; }
+        public string Beschrijving { get; set; }
         public List<Bezoek> Bezoeken { get; }
 
         public Project(int id, DateTime datumstart, DateTime datumeind, string beschrijving)
