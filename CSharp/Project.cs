@@ -8,25 +8,28 @@ namespace LivePerformance2016.CSharp
 {
     public class Project
     {
-        private int _id;
-        private string _naam;
-        private string _beschrijving;
-        private DateTime _datumStart;
-        private DateTime _datumEind;
+        public int ID { get; }
+        public DateTime DatumStart { get; }
+        public DateTime DatumEind { get; set; }
+        public string Beschrijving { get; }
+        public List<Bezoek> Bezoeken { get; }
 
-        public int iD { get; }
-        public string naam { get; set; }
-        public string beschrijving { get; set; }
-        public DateTime datumStart { get; set; }
-        public DateTime datumEind { get; set; }
-
-        public Project(int iD, string naam, string beschrijving, DateTime datumStart, DateTime datumEind)
+        public Project(int id, DateTime datumstart, DateTime datumeind, string beschrijving)
         {
-            this._id = iD;
-            this._naam = naam;
-            this._beschrijving = beschrijving;
-            this._datumStart = datumStart;
-            this._datumEind = datumEind;
+            ID = id;
+            DatumStart = datumstart;
+            DatumEind = datumeind;
+            Beschrijving = beschrijving;
+        }
+
+        public void AddBezoek(Bezoek bezoek)
+        {
+            Bezoeken.Add(bezoek);
+        }
+
+        public override string ToString()
+        {
+            return Beschrijving;
         }
 
     }

@@ -6,27 +6,30 @@ using System.Threading.Tasks;
 
 namespace LivePerformance2016.CSharp
 {
+    [Serializable]
     public class Diersoort
     {
-        private int _id;
-        private string _afkorting;
-        private string _vogelsoort;
-        private DateTime _broedPeriodeVan;
-        private DateTime _broedPeriodeTot;
+        
+        //public int ID { get; }
+        public string Naam { get;}
+        public string Afkorting { get; set; }
+        public DateTime BroedPeriodeVan { get; set; }
+        public DateTime BroedPeriodeTot { get; set; }
+        public int ReqNummer { get; }
 
-        public int iD { get; }
-        private string vogelsoort { get; set; }
-        private string afkorting { get; set; }
-        public DateTime broedPeriodeVan { get; set; }
-        public DateTime broedPeriodeTot { get; set; }
-
-        public Diersoort(int iD, string vogelsoort, string afkorting, DateTime broedPeriodeVan, DateTime broedPeriodeTot)
+        public Diersoort(string naam, string afkorting, DateTime broedPeriodeVan, DateTime broedPeriodeTot, int reqNummer)
         {
-            this._id = iD;
-            this._vogelsoort = vogelsoort;
-            this._afkorting = afkorting;
-            this._broedPeriodeVan = broedPeriodeVan;
-            this._broedPeriodeTot = broedPeriodeTot;
+            //ID = iD;
+            Naam = naam;
+            Afkorting = afkorting;
+            BroedPeriodeVan = broedPeriodeVan;
+            BroedPeriodeTot = broedPeriodeTot;
+            ReqNummer = reqNummer;
+        }
+
+        public override string ToString()
+        {
+            return Naam;
         }
     }
 }

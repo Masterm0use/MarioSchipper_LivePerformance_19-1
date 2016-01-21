@@ -7,7 +7,7 @@ using Oracle.ManagedDataAccess.Client;
 
 namespace LivePerformance2016.CSharp.Data
 {
-    public partial class Database : IData
+    public partial class Database
     {
         private static string dataUser = "dbi315883";
         private static string dataPass = "rFMhp3FfTN";

@@ -9,7 +9,7 @@ namespace LivePerformance2016.CSharp.Data
 {
     public partial class Database
     {
-        private List<Project> GetAllProjecten()
+        public List<Project> GetAllProjecten()
         {
             List<Project> projectlist = new List<Project>();
             using (OracleConnection connection = Connection)
@@ -29,7 +29,7 @@ namespace LivePerformance2016.CSharp.Data
             return projectlist;
         }
 
-        private List<TelGebied> GetAllTelgebied()
+        public List<TelGebied> GetAllTelgebied()
         {
             List<TelGebied> telGebiedlist = new List<TelGebied>();
             using (OracleConnection connection = Connection)
@@ -41,7 +41,7 @@ namespace LivePerformance2016.CSharp.Data
                     {
                         while (reader.Read())
                         {
-                            telGebiedlist.Add(CreateTelGebiedFromReader(reader));
+                            telGebiedlist.Add(CreateTelgebiedFromReader(reader));
                         }
                     }
                 }

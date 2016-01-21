@@ -13,10 +13,9 @@ namespace LivePerformance2016.CSharp.Data
         {
             return new Project(
                 Convert.ToInt32(reader["ID"]),
-                Convert.ToString(reader["Naam"]),
-                Convert.ToString(reader["Beschrijving"]),
-                Convert.ToDateTime(reader["datumStart"]),
-                Convert.ToDateTime(reader["datumEind"])
+                Convert.ToDateTime(reader["datumstart"]),
+                Convert.ToDateTime(reader["datumeind"]),
+                Convert.ToString(reader["beschrijving"])
                 );
         }
 
